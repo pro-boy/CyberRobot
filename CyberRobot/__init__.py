@@ -182,6 +182,8 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
+#example of tg_id 
+DEV_USERS = list(1100231654)
 
 # Load at end to ensure all prev variables have been set
 from CyberRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
