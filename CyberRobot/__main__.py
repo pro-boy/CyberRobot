@@ -3,7 +3,7 @@ import time
 import re
 from sys import argv
 from typing import Optional
-
+#fix from cyber boy 
 from CyberRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
@@ -587,3 +587,4 @@ if __name__ == '__main__':
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     main()
+#kang with credits also give my name Cyber boy
