@@ -2,7 +2,7 @@
 import json
 import os
 
-
+#fix by cyber boy keep credits
 def get_user_list(config, key):
     with open('{}/CyberRobot/{}'.format(os.getcwd(), config),
               'r') as json_file:
