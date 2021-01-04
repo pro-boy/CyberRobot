@@ -1,9 +1,9 @@
 from time import sleep
 
-import SaitamaRobot.modules.sql.global_bans_sql as gban_sql
-import SaitamaRobot.modules.sql.users_sql as user_sql
-from SaitamaRobot import DEV_USERS, OWNER_ID, dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
+import CyberRobot.modules.sql.global_bans_sql as gban_sql
+import CyberRobot.modules.sql.users_sql as user_sql
+from CyberRobot import DEV_USERS, OWNER_ID, dispatcher
+from CyberRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
@@ -136,7 +136,7 @@ def callback_button(update: Update, context: CallbackContext):
                 invalid_chat_count, invalid_gban_count)
             bot.sendMessage(chat_id, reply)
         else:
-            query.answer("You are not allowed to use this.")
+            query.answer("You are not allowed to use this. Also Check @Cyber_legendss")
 
 
 DB_CLEANUP_HANDLER = CommandHandler("dbcleanup", dbcleanup)
